@@ -8,5 +8,9 @@
 <body>
 <h1>Test</h1>
 <p>Lepo lepo se imam,... lep je dan.</p>
+
+<?php
+ include "Koledar.php"; 
+ ?>
 </body>
 
