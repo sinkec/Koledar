@@ -10,7 +10,13 @@
 <p>Lepo lepo se imam,... lep je dan.</p>
 
 <?php
- include "Koledar.php"; 
- ?>
+ 
+ include 'Calendar.php';
+ 
+ $calendar = new Calendar();
+ 
+ $calendar -> Show();
+
+?>
 </body>
 
