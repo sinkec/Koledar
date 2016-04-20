@@ -1,3 +1,10 @@
+Div#Calendar
+{
+	background-color: #999;
+	width: 605px;
+	height: 500px;
+}
+
 #DayHeader 
 {
 	float: left;
@@ -5,7 +12,7 @@
     padding: 0px;
     margin-top:5px;
     margin-left: 5px;
-    background-color: #aaa;
+    background-color: #ccc;
 
 }
 
