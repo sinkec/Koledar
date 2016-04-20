@@ -21,7 +21,7 @@ class Calendar
 	
 	private function _ShowDays()
 	{
-		echo '<ul>';
+		echo '<ul id = "DayHeader">';
 		foreach($this->DayNames as $day)
 		{
 			echo '<li>'. $day .'</li>';
