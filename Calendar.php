@@ -5,30 +5,36 @@ class Calendar
 	public function __construct()
 	{
 		echo "Class created";
-		$CurrentYear  = date("Y");
-		$CurrentMonth = date("m");
-		$CurrentDay   = date("d");
-		$CurrentDate  = date("d.m.Y");
-		echo $CurrentYear.'-'.$CurrentMonth.'-'.$CurrentDay.' date: '.$CurrentDate;
+		$this->CurrentYear  = date("Y");
+		$this->CurrentMonth = date("m");
+		$this->CurrentDay   = date("d");
+		$this->CurrentDate  = date("d.m.Y");
+		echo $this->CurrentYear.'-'.$this->CurrentMonth.'-'.$this->CurrentDay.' date: '.$this->CurrentDate;
 	}
 	
-	private $CurrentDate  = null;
-	private $CurrentDay   = 0;
-	private $CurrentMonth = 0;
-	private $CurrentYear  = 0;
+	private $CurrentDate ;
+	private $CurrentDay ;
+	private $CurrentMonth ;
+	private $CurrentYear ;
 	private $DaysInMonth  = 0;
+	private $FirstDayInMonth = 0;
 	private $DayNames     = array("Pon","Tor","Sre","Čet","Pet","Sob","Ned");
 	
 	public function Show()
 	{
 	    echo '<div id="Calendar">';
-		$this->_ShowDays();
+		$this->_ShowDayLabels();
         echo '</div>';
 		
-		echo date("D.m.Y - w",strtotime("01.01.2016"));
+		echo date("D.m.Y - w",strtotime("01.".$this->getCurrentMonth().".2016"));
 	}
-    	
-	private function _ShowDays()
+    
+	function getCurrentMonth()
+	{
+		return $this->CurrentMonth;
+	}
+		
+	private function _ShowDayLabels()
 	{
 		echo '<ul id="DayHeader">';
 		foreach($this->DayNames as $day)
@@ -36,6 +42,11 @@ class Calendar
 			echo '<li>'. $day .'</li>';
 		}		
 		echo '</ul>';
+	}
+	
+	private function _ShowDay()
+	{
+		
 	}
 	
 	
