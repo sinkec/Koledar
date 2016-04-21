@@ -16,6 +16,21 @@ Div#Calendar
 
 }
 
+#CurrentDay
+{
+    /*need to write css for current day*/
+}
+
+#Day
+{
+    /*Normal day to show*/
+}
+
+#BlankDay
+{
+    /*Not the day in the month*/
+}
+
 #DayHeader li
 {
 	margin:0px;
