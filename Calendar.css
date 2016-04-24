@@ -15,6 +15,15 @@ Div#Calendar
     background-color: #ccc;
 
 }
+#Row
+{
+    float: left;
+    background-color: #ccc;
+    width: 595px;
+    height: 70px;
+    margin-top: 5px;   
+    margin-left: 5px; 
+}
 
 #CurrentDay
 {

@@ -9,13 +9,15 @@ class Calendar
 		$this->CurrentMonth = date("m");
 		$this->CurrentDay   = date("d");
 		$this->CurrentDate  = date("d.m.Y");
+		$this->DaysInMonth  = date("t");
+		$this->FirstDayInMonth = intval(date("D.m.Y - w",strtotime("01.".$this->getCurrentMonth().".2016")));
 		echo $this->CurrentYear.'-'.$this->CurrentMonth.'-'.$this->CurrentDay.' date: '.$this->CurrentDate;
 	}
 	
-	private $CurrentDate ;
-	private $CurrentDay ;
-	private $CurrentMonth ;
-	private $CurrentYear ;
+	private $CurrentDate = null ;
+	private $CurrentDay = 0;
+	private $CurrentMonth = 0;
+	private $CurrentYear = 0;
 	private $DaysInMonth  = 0;
 	private $FirstDayInMonth = 0;
 	private $DayNames     = array("Pon","Tor","Sre","Čet","Pet","Sob","Ned");
@@ -24,11 +26,20 @@ class Calendar
 	{
 	    echo '<div id="Calendar">';
 		$this->_ShowDayLabels();
-        echo '</div>';
 		
-		echo date("D.m.Y - w",strtotime("01.".$this->getCurrentMonth().".2016"));
+		$this->_ShowRow();
+        
+		echo '</div>';
+		
+		echo $this->FirstDayInMonth;
 	}
-    
+	function _ShowRow() /*24.04. 2016 - npiši do konca*/
+	{
+		echo '<div id ="Row">test</div>';
+		echo '<div id ="Row">test</div>';
+		echo '<div id ="Row">test</div>';
+	}
+   /*dont know if i need this*/ 
 	function getCurrentMonth()
 	{
 		return $this->CurrentMonth;
