@@ -7,8 +7,8 @@
 </header>
 
 <body>
-<h1>Test</h1>
-<p>Lepo lepo se imam,... lep je dan.</p>
+<h1>Calendar v0.1</h1>
+
 
 <?php
  

@@ -23,6 +23,7 @@ Div#Calendar
     height: 70px;
     margin-top: 5px;   
     margin-left: 5px; 
+    
 }
 
 #CurrentDay
@@ -35,9 +36,36 @@ Div#Calendar
     /*Normal day to show*/
 }
 
-#BlankDay
+#Row ul
 {
     /*Not the day in the month*/
+    /*width:80px;
+    height:40px;
+    margin-right:5px;*/
+    float:left;
+    margin:0px;
+    padding: 0px;
+    
+    
+}
+#Row ul li
+{
+    float:left;
+    width:75px;
+    height:70px;
+    margin-right:5px;
+    margin-left: 5px;
+    
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    font-weight:bold;
+    
+    list-style-type: none;
+    background-color: #bbb;
+    
 }
 
 #DayHeader li
