@@ -35,14 +35,19 @@ class Calendar
 	{
 		$firstRowDay = intval($this->FirstDayInMonth);
 		$lastRowDays = (intval($this->DaysInMonth) - ($firstRowDay-2))%7;
-		$currentDay = 0;
+		$currentDay = 1;
+		$currentBox = 1;
 		/*prva vrstica*/
 		echo '<div id ="Row"><ul>';
 		for($i =1;$i<$firstRowDay;$i++)
 		{
 			echo '<li>123</li>';
+			$currentBox++;
 		}
 		echo '</ul></div>';
+		
+		/*Prvi dan v mesecu in naprej*/
+		
 		
 		
 		
