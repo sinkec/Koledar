@@ -14,6 +14,7 @@
  
  include 'Calendar.php';
  echo "Hello world pa še neki sranja zraven";
+ echo "sej se bomo naučil :P";
 
 ?>
 </body>
