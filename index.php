@@ -14,9 +14,6 @@
  
  include 'Calendar.php';
  
- $calendar = new Calendar();
- 
- $calendar -> Show();
 
 ?>
 </body>
