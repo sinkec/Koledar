@@ -12,6 +12,8 @@ class Calendar
 		$this->DaysInMonth  = date("t");
 		$this->FirstDayInMonth = date("w",strtotime("01.".$this->CurrentMonth.".2016"));
 		echo $this->CurrentYear.'-'.$this->CurrentMonth.'-'.$this->CurrentDay.' date: '.$this->CurrentDate;
+		
+		echo $this->FirstDayInMonth;
 	}
 	
 	private $CurrentDate = null ;
@@ -19,7 +21,7 @@ class Calendar
 	private $CurrentMonth = 0;
 	private $CurrentYear = 0;
 	private $DaysInMonth  = 0;
-	private $FirstDayInMonth = 0;
+	private $FirstDayInMonth;
 	private $DayNames     = array("Pon","Tor","Sre","Čet","Pet","Sob","Ned");
 	
 	public function Show()
@@ -39,7 +41,7 @@ class Calendar
 		$currentBox = 1;
 		/*prva vrstica*/
 		echo '<div id ="Row"><ul>';
-		for($i =1;$i<$firstRowDay;$i++)
+		for($i =1;$i<3/*$firstRowDay*/;$i++)
 		{
 			echo '<li>123</li>';
 			$currentBox++;
@@ -51,8 +53,8 @@ class Calendar
 		
 		
 		
-		echo '<div id ="Row">'.$lastRowDays.'</div>';
-		echo '<div id ="Row">test</div>';
+		echo '<div id ="Row">'.$this->FirstDayInMonth.'</div>';
+		echo '<div id ="Row">wtf</div>';
 	}
 	
 	/*Izris napisov za dan*/	
