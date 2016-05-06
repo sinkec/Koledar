@@ -13,7 +13,7 @@
 <?php
  
  include 'Calendar.php';
- 
+ echo "Hello world pa še neki sranja zraven";
 
 ?>
 </body>
