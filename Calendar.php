@@ -13,11 +13,12 @@ class Calendar
     
     public function __construct()
     {
-        $this->CurrentDate   = date('d.m.Y');
-        $this->CurrentYear   = date('Y');
-        $this->CurrentMonth  = date('m');
-        $this->CurrentDay    = date('d');
-        $this->MonthStartDay = date('01.m.Y');
+        $this->CurrentDate       = date('d.m.Y');
+        $this->CurrentYear       = date('Y');
+        $this->CurrentMonth      = date('m');
+        $this->CurrentMonthName  = date('M');
+        $this->CurrentDay        = date('d');
+        $this->MonthStartDay     = date('w',strtotime("First day of ".$this->CurrentMonthName));
         
         echo $this->MonthStartDay;
     }
