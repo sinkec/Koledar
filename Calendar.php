@@ -5,15 +5,21 @@
 class Calendar
 {
     private $CurrentDate   = null; //datum 
-    private $CurrentYear  = 0;    //leto
-    private $CurrentMonth = 0;    //mesec
-    private $CurrentDay   = 0;    //dan
-    private $DayLabels =  array("Ponedeljek","Torek","Sreda","Četrtek","Petek","Sobota","Nedelja"); //imena dnevov - v enodimenzionalnem polju
+    private $CurrentYear   = 0;    //leto
+    private $CurrentMonth  = 0;    //mesec
+    private $CurrentDay    = 0;    //dan
+    private $MonthStartDay = 0;
+    private $DayLabels     = array("Ponedeljek","Torek","Sreda","Četrtek","Petek","Sobota","Nedelja"); //imena dnevov - v enodimenzionalnem polju
     
     public function __construct()
     {
-        $this->CurrentDate = date('d.m.y');
-        echo $this->CurrentDate;
+        $this->CurrentDate   = date('d.m.Y');
+        $this->CurrentYear   = date('Y');
+        $this->CurrentMonth  = date('m');
+        $this->CurrentDay    = date('d');
+        $this->MonthStartDay = date('01.m.Y');
+        
+        echo $this->MonthStartDay;
     }
       
 }
