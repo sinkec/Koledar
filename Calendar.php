@@ -20,9 +20,7 @@ class Calendar
         $this->CurrentDay        = date('d');
         $this->MonthStartDay     = date('w',strtotime("First day of ".$this->CurrentMonthName));
         
-        echo $this->MonthStartDay;
+        echo "  CLASS CREATED " .$this->MonthStartDay;
     }
-      
 }
-
 ?>
