@@ -1,0 +1,43 @@
+div.Calendar
+{
+    /*Stil celotnega koledarja*/
+}
+
+div.MonthYear
+{
+    /*Stil izpisa glavnega meseca v koledarju*/
+}
+
+div.Nav
+{
+    /*Navigacija za menjavo mesecev*/
+}
+
+div.DayLabels
+{
+    /*Izpis header dnevi v tednu
+    
+    uporabljal bom <ul> in <li> element v div
+    
+    */
+}
+
+div.WeekRow
+{
+    /*izpis vrstice tedna*/
+}
+
+div.PasiveDay
+{
+    /*izpis dneva ki ni v mesecu - sivina disabled*/
+}
+
+div.Day
+{
+    /*Izpis dneva v mesecu*/
+}
+
+div.CurrentDay
+{
+    /*izpis trenutnega dneva*/
+}
