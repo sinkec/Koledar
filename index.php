@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <header>
 
-<title>Test</title>
+<title>Calendar v0.1</title>
 <meta charset="UTF-8" />
 <link href="Calendar.css" type="text/css" rel="stylesheet" /> 
 </header>

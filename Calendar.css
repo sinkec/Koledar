@@ -6,10 +6,12 @@ div.Calendar
     padding-right: 5px;
     padding-top: 5px;
     /*border: 2px solid gray;*/
-    width: 350px;
-    height: 450px;
+    width: 600px;
+    height: 650px;
     
     font-family: "Arial";
+    
+    box-shadow: 5px 5px 3px #444;
 }
 
 div.MonthYear
