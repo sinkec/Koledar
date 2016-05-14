@@ -8,6 +8,8 @@ div.Calendar
     /*border: 2px solid gray;*/
     width: 350px;
     height: 450px;
+    
+    font-family: "Arial";
 }
 
 div.MonthYear
@@ -25,14 +27,51 @@ div.MonthYear
     /*Stil izpisa glavnega meseca v koledarju*/
 }
 
-div.Nav
+div.NavLeft
 {
+    background: url(./Img/left-arrow-key.png) no-repeat right;
+    background-size: 20px 20px;
+    
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+    
+    height: 35px;
+    width: 35px;
+    
     display: inline-block;
     margin-right: 5px;
     float: right;
-    word-spacing: 15px;
-    font-weight: bolder;
     /*Navigacija za menjavo mesecev*/
+}
+
+div.NavLeft:hover
+{
+    -webkit-filter: opacity(80%);
+    filter: opacity(80%); 
+       
+}
+div.NavRight
+{
+    background: url(./Img/keyboard-right-arrow-button.png) no-repeat right;
+    background-size: 20px 20px;
+    
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+    
+    height: 35px;
+    width: 35px;
+    
+    display: inline-block;
+    margin-right: 5px;
+    float: right;
+    /*Navigacija za menjavo mesecev*/
+}
+div.NavRight:hover
+{
+    -webkit-filter: opacity(80%);
+    filter: opacity(80%);
+    
+    -webkit    
 }
 
 div.DayLabels
